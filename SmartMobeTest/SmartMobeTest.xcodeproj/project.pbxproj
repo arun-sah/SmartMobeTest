@@ -12,9 +12,14 @@
 		AFD95BD9225E51CE0019F48B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFD95BD7225E51CE0019F48B /* Main.storyboard */; };
 		AFD95BDB225E51CF0019F48B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AFD95BDA225E51CF0019F48B /* Assets.xcassets */; };
 		AFD95BDE225E51CF0019F48B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFD95BDC225E51CF0019F48B /* LaunchScreen.storyboard */; };
+		AFD95BF1225E5FFE0019F48B /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD95BF0225E5FFE0019F48B /* HomeVC.swift */; };
+		E34E5F7556175659330FCA10 /* Pods_SmartMobeTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A18B6A2ABED47F8031F5665 /* Pods_SmartMobeTest.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		10EAF53205D1829494789818 /* Pods-SmartMobeTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartMobeTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-SmartMobeTest/Pods-SmartMobeTest.release.xcconfig"; sourceTree = "<group>"; };
+		7A18B6A2ABED47F8031F5665 /* Pods_SmartMobeTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SmartMobeTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		91E17168D0F21B7660F9BA42 /* Pods-SmartMobeTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartMobeTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SmartMobeTest/Pods-SmartMobeTest.debug.xcconfig"; sourceTree = "<group>"; };
 		AFD95BD0225E51CE0019F48B /* SmartMobeTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartMobeTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFD95BD3225E51CE0019F48B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AFD95BD5225E51CE0019F48B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +27,7 @@
 		AFD95BDA225E51CF0019F48B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AFD95BDD225E51CF0019F48B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AFD95BDF225E51CF0019F48B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AFD95BF0225E5FFE0019F48B /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +35,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E34E5F7556175659330FCA10 /* Pods_SmartMobeTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		186A7C8B2598ABC667C8A8CC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				91E17168D0F21B7660F9BA42 /* Pods-SmartMobeTest.debug.xcconfig */,
+				10EAF53205D1829494789818 /* Pods-SmartMobeTest.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		245095C89F39347F05DDB92A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7A18B6A2ABED47F8031F5665 /* Pods_SmartMobeTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		AFD95BC7225E51CE0019F48B = {
 			isa = PBXGroup;
 			children = (
 				AFD95BD2225E51CE0019F48B /* SmartMobeTest */,
 				AFD95BD1225E51CE0019F48B /* Products */,
+				186A7C8B2598ABC667C8A8CC /* Pods */,
+				245095C89F39347F05DDB92A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -87,6 +113,7 @@
 		AFD95BE7225E55930019F48B /* Section */ = {
 			isa = PBXGroup;
 			children = (
+				AFD95BEC225E58440019F48B /* Home */,
 			);
 			path = Section;
 			sourceTree = "<group>";
@@ -120,6 +147,38 @@
 			path = Utility;
 			sourceTree = "<group>";
 		};
+		AFD95BEC225E58440019F48B /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				AFD95BED225E585D0019F48B /* Controller */,
+				AFD95BEF225E58750019F48B /* Model */,
+				AFD95BEE225E586A0019F48B /* Views */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		AFD95BED225E585D0019F48B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				AFD95BF0225E5FFE0019F48B /* HomeVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		AFD95BEE225E586A0019F48B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		AFD95BEF225E58750019F48B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -127,9 +186,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AFD95BE2225E51CF0019F48B /* Build configuration list for PBXNativeTarget "SmartMobeTest" */;
 			buildPhases = (
+				07ABAC30258AB498C9CF8B64 /* [CP] Check Pods Manifest.lock */,
 				AFD95BCC225E51CE0019F48B /* Sources */,
 				AFD95BCD225E51CE0019F48B /* Frameworks */,
 				AFD95BCE225E51CE0019F48B /* Resources */,
+				DFB64DC9516B18FADE6F3BE1 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -186,11 +247,63 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		07ABAC30258AB498C9CF8B64 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SmartMobeTest-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DFB64DC9516B18FADE6F3BE1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-SmartMobeTest/Pods-SmartMobeTest-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/ReachabilitySwift/Reachability.framework",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/TTGSnackbar/TTGSnackbar.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Reachability.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TTGSnackbar.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SmartMobeTest/Pods-SmartMobeTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		AFD95BCC225E51CE0019F48B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AFD95BF1225E5FFE0019F48B /* HomeVC.swift in Sources */,
 				AFD95BD6225E51CE0019F48B /* ViewController.swift in Sources */,
 				AFD95BD4225E51CE0019F48B /* AppDelegate.swift in Sources */,
 			);
@@ -336,6 +449,7 @@
 		};
 		AFD95BE3225E51CF0019F48B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 91E17168D0F21B7660F9BA42 /* Pods-SmartMobeTest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -355,6 +469,7 @@
 		};
 		AFD95BE4225E51CF0019F48B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 10EAF53205D1829494789818 /* Pods-SmartMobeTest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

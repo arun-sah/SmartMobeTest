@@ -16,6 +16,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        let loginNav = UINavigationController(rootViewController: LoginVC())
+        UIApplication.shared.statusBarStyle = .lightContent
+        window!.rootViewController  = loginNav
+        window!.backgroundColor = UIColor.white
+        window!.makeKeyAndVisible()
         return true
     }
 
