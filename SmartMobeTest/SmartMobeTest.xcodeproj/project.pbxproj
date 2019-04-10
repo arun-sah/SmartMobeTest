@@ -54,14 +54,70 @@
 		AFD95BD2225E51CE0019F48B /* SmartMobeTest */ = {
 			isa = PBXGroup;
 			children = (
-				AFD95BD3225E51CE0019F48B /* AppDelegate.swift */,
-				AFD95BD5225E51CE0019F48B /* ViewController.swift */,
-				AFD95BD7225E51CE0019F48B /* Main.storyboard */,
-				AFD95BDA225E51CF0019F48B /* Assets.xcassets */,
-				AFD95BDC225E51CF0019F48B /* LaunchScreen.storyboard */,
-				AFD95BDF225E51CF0019F48B /* Info.plist */,
+				AFD95BEB225E55D60019F48B /* Utility */,
+				AFD95BEA225E55CC0019F48B /* Theme */,
+				AFD95BE8225E55A30019F48B /* Resources */,
+				AFD95BE7225E55930019F48B /* Section */,
+				AFD95BE6225E558C0019F48B /* Manager */,
+				AFD95BE5225E552C0019F48B /* Application */,
 			);
 			path = SmartMobeTest;
+			sourceTree = "<group>";
+		};
+		AFD95BE5225E552C0019F48B /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				AFD95BD5225E51CE0019F48B /* ViewController.swift */,
+				AFD95BDF225E51CF0019F48B /* Info.plist */,
+				AFD95BDA225E51CF0019F48B /* Assets.xcassets */,
+				AFD95BDC225E51CF0019F48B /* LaunchScreen.storyboard */,
+				AFD95BD7225E51CE0019F48B /* Main.storyboard */,
+				AFD95BD3225E51CE0019F48B /* AppDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		AFD95BE6225E558C0019F48B /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		AFD95BE7225E55930019F48B /* Section */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Section;
+			sourceTree = "<group>";
+		};
+		AFD95BE8225E55A30019F48B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				AFD95BE9225E55AD0019F48B /* Font */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		AFD95BE9225E55AD0019F48B /* Font */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
+		AFD95BEA225E55CC0019F48B /* Theme */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Theme;
+			sourceTree = "<group>";
+		};
+		AFD95BEB225E55D60019F48B /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utility;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -284,7 +340,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = H786VT66QY;
-				INFOPLIST_FILE = SmartMobeTest/Info.plist;
+				INFOPLIST_FILE = SmartMobeTest/Application/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,7 +359,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = H786VT66QY;
-				INFOPLIST_FILE = SmartMobeTest/Info.plist;
+				INFOPLIST_FILE = SmartMobeTest/Application/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
