@@ -37,6 +37,7 @@ class Util: NSObject {
         btnMenu.titleLabel?.font = UIFont.boldSystemFont(ofSize: 20)
         btnMenu.titleLabel?.textAlignment = .right
         btnMenu.setTitle(icon, for: UIControl.State())
+        btnMenu.titleLabel?.textColor = UIColor.white
         btnMenu.setTitleColor(UIColor.white, for: UIControl.State())
         btnMenu.addTarget(parent, action: #selector(parent.navRightButtonTapped), for: .touchUpInside)
         let rightBarButtonItem = UIBarButtonItem(customView: btnMenu)

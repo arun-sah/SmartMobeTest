@@ -10,12 +10,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SmartMobeTest/Section/Home/Controller/HomeVC.swift"
-            timestampString = "576640450.757406"
+            timestampString = "576697232.864409"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "55"
-            endingLineNumber = "55"
-            landmarkName = "collectionView(_:layout:sizeForItemAt:)"
+            startingLineNumber = "71"
+            endingLineNumber = "71"
+            landmarkName = "RemoveSearchbar()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -26,12 +26,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SmartMobeTest/Section/Home/Controller/HomeVC.swift"
-            timestampString = "576640450.75808"
+            timestampString = "576697232.864575"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "52"
-            endingLineNumber = "52"
-            landmarkName = "collectionView(_:layout:sizeForItemAt:)"
+            startingLineNumber = "68"
+            endingLineNumber = "68"
+            landmarkName = "setUpSearchbar()"
             landmarkType = "7">
             <Locations>
                <Location

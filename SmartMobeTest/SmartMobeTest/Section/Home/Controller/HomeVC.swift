@@ -10,8 +10,8 @@ import UIKit
 
 class HomeVC: UIViewController {
     @IBOutlet var BackGroundView: UIView!
-    
     @IBOutlet weak var collectionview: UICollectionView!
+    var refreshControl  : UIRefreshControl!
     
     var homedata = [HomeModel]()
     lazy var searchBar:UISearchBar = UISearchBar()
@@ -28,6 +28,22 @@ class HomeVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         Util.setupNavigationBar(leftButtonIcon: "", Tittle: "Home", rightButtonIcon: "\u{1F50D}", parent: self)
+        
+        refreshControl = UIRefreshControl()
+        refreshControl.attributedTitle = NSAttributedString(string: "Pull to refresh")
+        refreshControl.addTarget(self, action: #selector(self.refresh(sender:)), for: UIControl.Event.valueChanged)
+        self.collectionview.addSubview(refreshControl)
+    }
+    
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(true)
+        navigationController?.navigationBar.isHidden = false
+    }
+    
+    @objc func refresh(sender:AnyObject) {
+       HomeApiCall()
+        refreshControl.endRefreshing()
     }
     
     func setupGradientBackground(BGView:UIView) {
@@ -140,7 +156,13 @@ extension HomeVC:UICollectionViewDelegate,UICollectionViewDataSource,UICollectio
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        navigationController?.pushViewController(Routes.GetHomeDetailVC(img: homedata[indexPath.row].url!), animated: true)
+        var tittleText = ""
+        if !isSearch {
+            tittleText = FilterednameArray[indexPath.row]
+        }else{
+            tittleText = nameArray[indexPath.row]
+        }
+        navigationController?.pushViewController(Routes.GetHomeDetailVC(img: homedata[indexPath.row].url!, titlletext: tittleText), animated: true)
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {

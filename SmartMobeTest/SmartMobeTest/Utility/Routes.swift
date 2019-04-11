@@ -9,9 +9,10 @@ struct Routes {
         let HomeVc = mainBoard.instantiateViewController(withIdentifier: "HomeView") as! HomeVC
         return HomeVc
     }
-    static func GetHomeDetailVC(img:String) -> UIViewController {
+    static func GetHomeDetailVC(img:String,titlletext:String) -> UIViewController {
         let HomeDVc = mainBoard.instantiateViewController(withIdentifier: "HomeDetailViews") as! HomeDetailVC
         HomeDVc.imgurl = img
+        HomeDVc.titletext = titlletext
         return HomeDVc
     }
     
