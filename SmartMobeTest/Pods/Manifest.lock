@@ -2,6 +2,9 @@ PODS:
   - Alamofire (4.8.2)
   - IQKeyboardManagerSwift (6.2.1)
   - ReachabilitySwift (4.3.1)
+  - SDWebImage (5.0.0):
+    - SDWebImage/Core (= 5.0.0)
+  - SDWebImage/Core (5.0.0)
   - SwiftyJSON (4.3.0)
   - TTGSnackbar (1.7.5)
 
@@ -9,6 +12,7 @@ DEPENDENCIES:
   - Alamofire
   - IQKeyboardManagerSwift
   - ReachabilitySwift
+  - SDWebImage
   - SwiftyJSON
   - TTGSnackbar
 
@@ -17,6 +21,7 @@ SPEC REPOS:
     - Alamofire
     - IQKeyboardManagerSwift
     - ReachabilitySwift
+    - SDWebImage
     - SwiftyJSON
     - TTGSnackbar
 
@@ -24,9 +29,10 @@ SPEC CHECKSUMS:
   Alamofire: ae5c501addb7afdbb13687d7f2f722c78734c2d3
   IQKeyboardManagerSwift: 0f0ae8935360b4003e6ea1ac7c19898f01e2f7c7
   ReachabilitySwift: 4032e2f59586e11e3b0ebe15b167abdd587a388b
+  SDWebImage: 5de80a0302de9e377e62f47d2fa1304efff0e55f
   SwiftyJSON: 6faa0040f8b59dead0ee07436cbf76b73c08fd08
   TTGSnackbar: 2cf4e7b6ffbe5cddf248a73f3ee952b71bee8ea3
 
-PODFILE CHECKSUM: be2c2e103751cbec3c77eedf8818de67324614b1
+PODFILE CHECKSUM: 37ce1eae49274c1ad28d70f54364fe5deeff9c91
 
-COCOAPODS: 1.5.3
+COCOAPODS: 1.6.1

@@ -34,7 +34,6 @@ class Util: NSObject {
         }
         let btnMenu = UIButton();
         btnMenu.frame = CGRect(x: 0, y: 0, width: 27, height: 40)
-       // btnMenu.titleLabel?.font = UIFont.bagmati(size: 20)
         btnMenu.titleLabel?.font = UIFont.boldSystemFont(ofSize: 20)
         btnMenu.titleLabel?.textAlignment = .right
         btnMenu.setTitle(icon, for: UIControl.State())
@@ -53,7 +52,6 @@ class Util: NSObject {
         
         let btnMenu = UIButton();
         btnMenu.frame = CGRect(x: 0, y: 0, width: 27, height: 40)
-       // btnMenu.titleLabel?.font = UIFont.bagmati(size: 18)
         btnMenu.titleLabel?.font = UIFont.boldSystemFont(ofSize: 18)
         btnMenu.titleLabel?.textAlignment = .left
         btnMenu.setTitle(icon, for: UIControl.State())

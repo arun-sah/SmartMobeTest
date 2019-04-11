@@ -7,9 +7,16 @@
 //
 
 import UIKit
+import SDWebImage
 
 class HomeCell: UICollectionViewCell {
     
     @IBOutlet weak var CellImage: UIImageView!
     @IBOutlet weak var CellbackGround: UIView!
+    
+    func configureCell(celldata:HomeModel) {
+        if let imageURL = URL(string:celldata.url!) {
+            CellImage.sd_setImage(with: imageURL, placeholderImage: UIImage(named: "smartmobe"))
+        }
+    }
 }

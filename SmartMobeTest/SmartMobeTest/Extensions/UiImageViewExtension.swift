@@ -1,10 +1,3 @@
-//
-//  UiImageViewExtension.swift
-//  Panchakanya
-//
-//  Created by User on 7/20/18.
-//  Copyright © 2018 SourceCode. All rights reserved.
-//
 
 import UIKit
 

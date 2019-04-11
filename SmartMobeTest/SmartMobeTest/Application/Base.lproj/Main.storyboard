@@ -20,7 +20,7 @@
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="y9X-tK-J6t">
                                 <rect key="frame" x="10" y="10" width="394" height="842"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="5ny-Mw-ZSl">
                                     <size key="itemSize" width="193" height="183"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -44,19 +44,24 @@
                                                         </userDefinedRuntimeAttribute>
                                                     </userDefinedRuntimeAttributes>
                                                 </view>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="smartmobe" translatesAutoresizingMaskIntoConstraints="NO" id="kPg-RV-kLh">
-                                                    <rect key="frame" x="10" y="10" width="173" height="163"/>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="smartmobe" translatesAutoresizingMaskIntoConstraints="NO" id="kPg-RV-kLh">
+                                                    <rect key="frame" x="5" y="5" width="183" height="173"/>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                            <integer key="value" value="10"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
                                                 </imageView>
                                             </subviews>
                                         </view>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="backgroundColor" red="0.86881929636001587" green="0.92036277055740356" blue="0.99939173460006714" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstItem="fvK-hT-OIa" firstAttribute="leading" secondItem="5Ou-yW-F1w" secondAttribute="leading" id="09C-Jg-TsT"/>
-                                            <constraint firstItem="kPg-RV-kLh" firstAttribute="leading" secondItem="5Ou-yW-F1w" secondAttribute="leading" constant="10" id="GCg-ZJ-xqA"/>
-                                            <constraint firstItem="kPg-RV-kLh" firstAttribute="top" secondItem="5Ou-yW-F1w" secondAttribute="top" constant="10" id="HjH-gT-zAR"/>
-                                            <constraint firstAttribute="trailing" secondItem="kPg-RV-kLh" secondAttribute="trailing" constant="10" id="Myu-BM-0bb"/>
-                                            <constraint firstAttribute="bottom" secondItem="kPg-RV-kLh" secondAttribute="bottom" constant="10" id="UCY-5Z-xmz"/>
+                                            <constraint firstItem="kPg-RV-kLh" firstAttribute="leading" secondItem="5Ou-yW-F1w" secondAttribute="leading" constant="5" id="GCg-ZJ-xqA"/>
+                                            <constraint firstItem="kPg-RV-kLh" firstAttribute="top" secondItem="5Ou-yW-F1w" secondAttribute="top" constant="5" id="HjH-gT-zAR"/>
+                                            <constraint firstAttribute="trailing" secondItem="kPg-RV-kLh" secondAttribute="trailing" constant="5" id="Myu-BM-0bb"/>
+                                            <constraint firstAttribute="bottom" secondItem="kPg-RV-kLh" secondAttribute="bottom" constant="5" id="UCY-5Z-xmz"/>
                                             <constraint firstAttribute="trailing" secondItem="fvK-hT-OIa" secondAttribute="trailing" id="bo2-VD-TgE"/>
                                             <constraint firstAttribute="bottom" secondItem="fvK-hT-OIa" secondAttribute="bottom" id="i1q-60-qVo"/>
                                             <constraint firstItem="fvK-hT-OIa" firstAttribute="top" secondItem="5Ou-yW-F1w" secondAttribute="top" id="trM-Gy-J8M"/>
@@ -73,7 +78,7 @@
                                 </connections>
                             </collectionView>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.86881929636001587" green="0.92036277055740356" blue="0.99939173460006714" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="y9X-tK-J6t" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="10" id="28z-xy-Bu0"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="y9X-tK-J6t" secondAttribute="bottom" constant="10" id="Kwd-Vf-ZCU"/>

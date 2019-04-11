@@ -1,18 +1,3 @@
-//
-//  WebService.swift
-//  PLInsurance
-//
-//  Created by mac on 3/12/19.
-//  Copyright © 2019 SourceCode. All rights reserved.
-//
-//
-//  WebService.swift
-//  Nyef
-//
-//  Created by Arun kumar Sah on 6/10/18.
-//  Copyright © 2018 SourceCode. All rights reserved.
-//
-
 
 import UIKit
 import Reachability
@@ -22,9 +7,9 @@ import SwiftyJSON
 import SystemConfiguration
 
 //test url
-let bURL = "http://ops.sourcecode.com.np"
+let bURL = "http://www.splashbase.co"
 let baseURL = bURL+"/api/v1/"
-let PLheader:[String:AnyObject] = [ "secretKey":"PLOPS$#@1"as AnyObject]
+
 
 enum APIConfig{
     case GetProducts
@@ -34,14 +19,14 @@ enum APIConfig{
         switch self{
             
         case .GetProducts:
-            return baseURL+"GetProducts"
+            return baseURL+"images/latest"
         }
     }
 }
 
 class WebService: NSObject {
 
-    class func postAt(
+    class func GetAt(
         url:String,
         parameters: [String: AnyObject]? = nil,
         successBlock:@escaping ((_ response:JSON?) -> Void),
@@ -49,42 +34,23 @@ class WebService: NSObject {
         if Reachablity.isNetworkReachable(){
             Alamofire.request(
                 url,
-                method: .post,
+                method: .get,
                 parameters: parameters,
                 encoding: JSONEncoding.default,
-                headers:  PLheader as? HTTPHeaders)
+                headers: nil)
                 //.validate(contentType: ["application/json"])
                 .responseJSON { response in
-                    print("URl:\(url)\n header:\(PLheader)\nparameters:-\(String(describing: parameters))\nResponce:-\(response)")
+                    
                     switch(response.result){
+                        
                         
                     case .success:
                         let responcedata = response.result.value
                         print(responcedata)
                         let responcejson = JSON(responcedata!)
-                        print(responcejson)
-                        let Responcedata = responcejson["data"]
-                        let responcecode = responcejson["code"]
-                         let responcMessage = responcejson["message"].stringValue
-                        switch responcecode{
-                        case 200:
-                            successBlock(Responcedata)
-                            break
-                            
-                        case 401:
-                            failureBlock(responcMessage)
-                        case 500:
-                             failureBlock(responcMessage)
-                        case 502:
-                             failureBlock(responcMessage)
-                        
-                        default:
-                            failureBlock(responcMessage)
-                            print("error-----")
-                        }
-                        break
+                        successBlock(responcejson)
                     case .failure(let error):
-                        failureBlock("error occured")
+                        failureBlock(error as! String)
                         break
                     }
             }

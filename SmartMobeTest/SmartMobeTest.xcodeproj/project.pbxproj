@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A363077225EF9D10067A252 /* HomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A363076225EF9D10067A252 /* HomeModel.swift */; };
 		AF1B47AD225EBC50004A0B69 /* Routes.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF1B47AB225EBC4F004A0B69 /* Routes.swift */; };
 		AF1B47AE225EBC50004A0B69 /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF1B47AC225EBC4F004A0B69 /* Util.swift */; };
 		AF1B47B0225EBD69004A0B69 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF1B47AF225EBD69004A0B69 /* Theme.swift */; };
@@ -27,6 +28,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0A363076225EF9D10067A252 /* HomeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeModel.swift; sourceTree = "<group>"; };
 		10EAF53205D1829494789818 /* Pods-SmartMobeTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartMobeTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-SmartMobeTest/Pods-SmartMobeTest.release.xcconfig"; sourceTree = "<group>"; };
 		7A18B6A2ABED47F8031F5665 /* Pods_SmartMobeTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SmartMobeTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		91E17168D0F21B7660F9BA42 /* Pods-SmartMobeTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartMobeTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SmartMobeTest/Pods-SmartMobeTest.debug.xcconfig"; sourceTree = "<group>"; };
@@ -62,6 +64,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0A363075225EF9C00067A252 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0A363076225EF9D10067A252 /* HomeModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		186A7C8B2598ABC667C8A8CC /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -108,8 +118,8 @@
 		AFD95BD2225E51CE0019F48B /* SmartMobeTest */ = {
 			isa = PBXGroup;
 			children = (
-				AF1B47B9225EC7C2004A0B69 /* Extensions */,
 				AFD95BE5225E552C0019F48B /* Application */,
+				AF1B47B9225EC7C2004A0B69 /* Extensions */,
 				AFD95BEB225E55D60019F48B /* Utility */,
 				AFD95BEA225E55CC0019F48B /* Theme */,
 				AFD95BE8225E55A30019F48B /* Resources */,
@@ -187,8 +197,8 @@
 		AFD95BEC225E58440019F48B /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				0A363075225EF9C00067A252 /* Model */,
 				AFD95BED225E585D0019F48B /* Controller */,
-				AFD95BEF225E58750019F48B /* Model */,
 				AFD95BEE225E586A0019F48B /* Views */,
 			);
 			path = Home;
@@ -208,13 +218,6 @@
 				AF1B47B7225EC45D004A0B69 /* HomeCell.swift */,
 			);
 			path = Views;
-			sourceTree = "<group>";
-		};
-		AFD95BEF225E58750019F48B /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -313,10 +316,11 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-SmartMobeTest/Pods-SmartMobeTest-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-SmartMobeTest/Pods-SmartMobeTest-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/ReachabilitySwift/Reachability.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 				"${BUILT_PRODUCTS_DIR}/TTGSnackbar/TTGSnackbar.framework",
 			);
@@ -325,12 +329,13 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Reachability.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TTGSnackbar.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SmartMobeTest/Pods-SmartMobeTest-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SmartMobeTest/Pods-SmartMobeTest-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -342,6 +347,7 @@
 			files = (
 				AF1B47BD225EC885004A0B69 /* WebService.swift in Sources */,
 				AFD95BF1225E5FFE0019F48B /* HomeVC.swift in Sources */,
+				0A363077225EF9D10067A252 /* HomeModel.swift in Sources */,
 				AF1B47B8225EC45D004A0B69 /* HomeCell.swift in Sources */,
 				AF1B47AD225EBC50004A0B69 /* Routes.swift in Sources */,
 				AF1B47AE225EBC50004A0B69 /* Util.swift in Sources */,

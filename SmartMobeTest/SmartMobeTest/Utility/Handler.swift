@@ -1,10 +1,3 @@
-//
-//  Handler.swift
-//  PLInsurance
-//
-//  Created by Arun kumar Sah on 1/29/19.
-//  Copyright © 2019 SourceCode. All rights reserved.
-//
 
 import UIKit
 import  TTGSnackbar

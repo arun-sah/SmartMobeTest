@@ -1,10 +1,3 @@
-//
-//  Theme.swift
-//  HPCIDBC
-//
-//  Created by Braindigit on 2/12/18.
-//  Copyright © 2018 TechTonne. All rights reserved.
-//
 
 import Foundation
 import UIKit
