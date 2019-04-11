@@ -16,9 +16,13 @@ class HomeVC: UIViewController {
     var homedata = [HomeModel]()
     lazy var searchBar:UISearchBar = UISearchBar()
     var isSearch = true
+    var nameArray = [String]()
+     var FilterednameArray = [String]()
+    var currentIndex = 0
     
     override func loadView() {
         super.loadView()
+        nameArray = ["Apple","banana","Cat","Dog","Elephnat","Frog","Girraf","hen"," Polar Bear","Hummingbird"]
        HomeApiCall()
     }
     override func viewDidLoad() {
@@ -56,10 +60,13 @@ class HomeVC: UIViewController {
         print("searchicon pressed")
         
         if isSearch{
-            Util.setupNavigationBar(leftButtonIcon: "", Tittle: "Home", rightButtonIcon: "   \u{2716}", parent: self)
+           // Util.setupNavigationBar(leftButtonIcon: "", Tittle: "Home", rightButtonIcon: "\u{2716}", parent: self)
+             Util.setupRightButton("\u{2716}", parent: self)
             setUpSearchbar()
         }else{
             RemoveSearchbar()
+            Util.setupRightButton("\u{1F50D}", parent: self)
+            collectionview.reloadData()
         }
         
         isSearch = !isSearch
@@ -72,30 +79,68 @@ extension HomeVC: UISearchBarDelegate{
     
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
         print("searchText \(searchText)")
+         searchedArray(searchtext: searchBar.text!)
     }
     
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
         print("searchText \(String(describing: searchBar.text))")
-      //  self.view.endEditing(true)
+        self.view.endEditing(true)
         self.searchBar.endEditing(true)
-        Handler.makeToast(message: "search text --\(searchBar.text!)")
+        searchedArray(searchtext: searchBar.text!)
+
+        
+    }
+    
+    func searchedArray(searchtext:String) {
+        FilterednameArray.removeAll()
+        let lowercasearray = nameArray.map{$0.lowercased()}
+        if lowercasearray.contains(searchtext.lowercased()){
+            FilterednameArray.append(searchtext)
+        }
+        FilterednameArray.removeDuplicates()
+        collectionview.reloadData()
+//        for name in nameArray
+//        {
+//            if name == searchtext {
+//                print("Found \(name) for index \(currentIndex)")
+//                break
+//            }
+//
+//            currentIndex += 1
+   //     }
     }
     
 }
 //MARK: uicollecytionview delegate/ data source
 extension HomeVC:UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout{
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return homedata.count
+       
+        
+        if !isSearch {
+            return FilterednameArray.count
+        }else{
+             return homedata.count
+        }
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "HomeCell", for: indexPath) as! HomeCell
         setupGradientBackground(BGView: cell.CellbackGround)
         let indexdata = homedata[indexPath.row]
-        cell.configureCell(celldata: indexdata)
         
+        var dtitle = ""
+        if !isSearch {
+            dtitle = FilterednameArray[indexPath.row]
+        }else{
+           dtitle = nameArray[indexPath.row]
+        }
+        cell.configureCell(celldata: indexdata, title: dtitle)
         return cell
         
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        navigationController?.pushViewController(Routes.GetHomeDetailVC(img: homedata[indexPath.row].url!), animated: true)
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {

@@ -11,10 +11,12 @@ import SDWebImage
 
 class HomeCell: UICollectionViewCell {
     
+    @IBOutlet weak var TitleLbl: UILabel!
     @IBOutlet weak var CellImage: UIImageView!
     @IBOutlet weak var CellbackGround: UIView!
     
-    func configureCell(celldata:HomeModel) {
+    func configureCell(celldata:HomeModel,title:String) {
+        TitleLbl.text = title
         if let imageURL = URL(string:celldata.url!) {
             CellImage.sd_setImage(with: imageURL, placeholderImage: UIImage(named: "smartmobe"))
         }
