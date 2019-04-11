@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import IQKeyboardManagerSwift
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -16,13 +17,32 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        
-        let loginNav = UINavigationController(rootViewController: LoginVC())
+        setupAppearance()
+        setupKeyboard()
+        let HomeNav = UINavigationController(rootViewController: Routes.GetHomeVC())
         UIApplication.shared.statusBarStyle = .lightContent
-        window!.rootViewController  = loginNav
+        window!.rootViewController  = HomeNav
         window!.backgroundColor = UIColor.white
         window!.makeKeyAndVisible()
         return true
+    }
+    
+    
+    func setupAppearance(){
+        self.window = UIWindow(frame: UIScreen.main.bounds)
+        
+        UINavigationBar.appearance().barTintColor = Theme.Colors.navigationBarColor.color;     UINavigationBar.appearance().titleTextAttributes = [NSAttributedString.Key.foregroundColor : UIColor.white]
+        UINavigationBar.appearance().tintColor = UIColor.clear
+        UINavigationBar.appearance().isTranslucent = false
+        UINavigationBar.appearance().shadowImage = UIImage()
+        UINavigationBar.appearance().setBackgroundImage(UIImage(), for: .default)
+    }
+    
+    func setupKeyboard() {
+        IQKeyboardManager.shared.enable = true
+        IQKeyboardManager.shared.toolbarTintColor = UIColor.orange
+        IQKeyboardManager.shared.keyboardDistanceFromTextField = 150
+        IQKeyboardManager.shared.shouldResignOnTouchOutside = true
     }
 
     func applicationWillResignActive(_ application: UIApplication) {

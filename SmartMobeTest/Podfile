@@ -3,8 +3,6 @@
 
 target 'SmartMobeTest' do
     use_frameworks!
-
- pod 'RealmSwift'
  pod 'Alamofire'
  pod 'ReachabilitySwift'
  pod 'SwiftyJSON'

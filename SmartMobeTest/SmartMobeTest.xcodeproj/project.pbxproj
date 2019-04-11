@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AF1B47AD225EBC50004A0B69 /* Routes.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF1B47AB225EBC4F004A0B69 /* Routes.swift */; };
+		AF1B47AE225EBC50004A0B69 /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF1B47AC225EBC4F004A0B69 /* Util.swift */; };
+		AF1B47B0225EBD69004A0B69 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF1B47AF225EBD69004A0B69 /* Theme.swift */; };
+		AF1B47B4225EBDD5004A0B69 /* Roboto-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AF1B47B1225EBDD5004A0B69 /* Roboto-Light.ttf */; };
+		AF1B47B5225EBDD5004A0B69 /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AF1B47B2225EBDD5004A0B69 /* Roboto-Bold.ttf */; };
+		AF1B47B6225EBDD5004A0B69 /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AF1B47B3225EBDD5004A0B69 /* Roboto-Regular.ttf */; };
+		AF1B47B8225EC45D004A0B69 /* HomeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF1B47B7225EC45D004A0B69 /* HomeCell.swift */; };
+		AF1B47BB225EC7D7004A0B69 /* UiImageViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF1B47BA225EC7D7004A0B69 /* UiImageViewExtension.swift */; };
+		AF1B47BD225EC885004A0B69 /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF1B47BC225EC885004A0B69 /* WebService.swift */; };
+		AF1B47BF225EC9B2004A0B69 /* Handler.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF1B47BE225EC9B2004A0B69 /* Handler.swift */; };
 		AFD95BD4225E51CE0019F48B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD95BD3225E51CE0019F48B /* AppDelegate.swift */; };
 		AFD95BD6225E51CE0019F48B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD95BD5225E51CE0019F48B /* ViewController.swift */; };
 		AFD95BD9225E51CE0019F48B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFD95BD7225E51CE0019F48B /* Main.storyboard */; };
@@ -20,6 +30,16 @@
 		10EAF53205D1829494789818 /* Pods-SmartMobeTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartMobeTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-SmartMobeTest/Pods-SmartMobeTest.release.xcconfig"; sourceTree = "<group>"; };
 		7A18B6A2ABED47F8031F5665 /* Pods_SmartMobeTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SmartMobeTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		91E17168D0F21B7660F9BA42 /* Pods-SmartMobeTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartMobeTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SmartMobeTest/Pods-SmartMobeTest.debug.xcconfig"; sourceTree = "<group>"; };
+		AF1B47AB225EBC4F004A0B69 /* Routes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Routes.swift; sourceTree = "<group>"; };
+		AF1B47AC225EBC4F004A0B69 /* Util.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
+		AF1B47AF225EBD69004A0B69 /* Theme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		AF1B47B1225EBDD5004A0B69 /* Roboto-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Light.ttf"; sourceTree = "<group>"; };
+		AF1B47B2225EBDD5004A0B69 /* Roboto-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Bold.ttf"; sourceTree = "<group>"; };
+		AF1B47B3225EBDD5004A0B69 /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Regular.ttf"; sourceTree = "<group>"; };
+		AF1B47B7225EC45D004A0B69 /* HomeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCell.swift; sourceTree = "<group>"; };
+		AF1B47BA225EC7D7004A0B69 /* UiImageViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UiImageViewExtension.swift; sourceTree = "<group>"; };
+		AF1B47BC225EC885004A0B69 /* WebService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
+		AF1B47BE225EC9B2004A0B69 /* Handler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Handler.swift; sourceTree = "<group>"; };
 		AFD95BD0225E51CE0019F48B /* SmartMobeTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartMobeTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFD95BD3225E51CE0019F48B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AFD95BD5225E51CE0019F48B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -59,6 +79,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		AF1B47B9225EC7C2004A0B69 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				AF1B47BA225EC7D7004A0B69 /* UiImageViewExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		AFD95BC7225E51CE0019F48B = {
 			isa = PBXGroup;
 			children = (
@@ -80,12 +108,13 @@
 		AFD95BD2225E51CE0019F48B /* SmartMobeTest */ = {
 			isa = PBXGroup;
 			children = (
+				AF1B47B9225EC7C2004A0B69 /* Extensions */,
+				AFD95BE5225E552C0019F48B /* Application */,
 				AFD95BEB225E55D60019F48B /* Utility */,
 				AFD95BEA225E55CC0019F48B /* Theme */,
 				AFD95BE8225E55A30019F48B /* Resources */,
 				AFD95BE7225E55930019F48B /* Section */,
 				AFD95BE6225E558C0019F48B /* Manager */,
-				AFD95BE5225E552C0019F48B /* Application */,
 			);
 			path = SmartMobeTest;
 			sourceTree = "<group>";
@@ -93,12 +122,12 @@
 		AFD95BE5225E552C0019F48B /* Application */ = {
 			isa = PBXGroup;
 			children = (
+				AFD95BD3225E51CE0019F48B /* AppDelegate.swift */,
 				AFD95BD5225E51CE0019F48B /* ViewController.swift */,
 				AFD95BDF225E51CF0019F48B /* Info.plist */,
 				AFD95BDA225E51CF0019F48B /* Assets.xcassets */,
 				AFD95BDC225E51CF0019F48B /* LaunchScreen.storyboard */,
 				AFD95BD7225E51CE0019F48B /* Main.storyboard */,
-				AFD95BD3225E51CE0019F48B /* AppDelegate.swift */,
 			);
 			path = Application;
 			sourceTree = "<group>";
@@ -106,6 +135,7 @@
 		AFD95BE6225E558C0019F48B /* Manager */ = {
 			isa = PBXGroup;
 			children = (
+				AF1B47BC225EC885004A0B69 /* WebService.swift */,
 			);
 			path = Manager;
 			sourceTree = "<group>";
@@ -129,6 +159,9 @@
 		AFD95BE9225E55AD0019F48B /* Font */ = {
 			isa = PBXGroup;
 			children = (
+				AF1B47B2225EBDD5004A0B69 /* Roboto-Bold.ttf */,
+				AF1B47B1225EBDD5004A0B69 /* Roboto-Light.ttf */,
+				AF1B47B3225EBDD5004A0B69 /* Roboto-Regular.ttf */,
 			);
 			path = Font;
 			sourceTree = "<group>";
@@ -136,6 +169,7 @@
 		AFD95BEA225E55CC0019F48B /* Theme */ = {
 			isa = PBXGroup;
 			children = (
+				AF1B47AF225EBD69004A0B69 /* Theme.swift */,
 			);
 			path = Theme;
 			sourceTree = "<group>";
@@ -143,6 +177,9 @@
 		AFD95BEB225E55D60019F48B /* Utility */ = {
 			isa = PBXGroup;
 			children = (
+				AF1B47BE225EC9B2004A0B69 /* Handler.swift */,
+				AF1B47AB225EBC4F004A0B69 /* Routes.swift */,
+				AF1B47AC225EBC4F004A0B69 /* Util.swift */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -168,6 +205,7 @@
 		AFD95BEE225E586A0019F48B /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				AF1B47B7225EC45D004A0B69 /* HomeCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -239,8 +277,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF1B47B6225EBDD5004A0B69 /* Roboto-Regular.ttf in Resources */,
 				AFD95BDE225E51CF0019F48B /* LaunchScreen.storyboard in Resources */,
 				AFD95BDB225E51CF0019F48B /* Assets.xcassets in Resources */,
+				AF1B47B5225EBDD5004A0B69 /* Roboto-Bold.ttf in Resources */,
+				AF1B47B4225EBDD5004A0B69 /* Roboto-Light.ttf in Resources */,
 				AFD95BD9225E51CE0019F48B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -276,8 +317,6 @@
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/ReachabilitySwift/Reachability.framework",
-				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
-				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 				"${BUILT_PRODUCTS_DIR}/TTGSnackbar/TTGSnackbar.framework",
 			);
@@ -286,8 +325,6 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Reachability.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TTGSnackbar.framework",
 			);
@@ -303,8 +340,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF1B47BD225EC885004A0B69 /* WebService.swift in Sources */,
 				AFD95BF1225E5FFE0019F48B /* HomeVC.swift in Sources */,
+				AF1B47B8225EC45D004A0B69 /* HomeCell.swift in Sources */,
+				AF1B47AD225EBC50004A0B69 /* Routes.swift in Sources */,
+				AF1B47AE225EBC50004A0B69 /* Util.swift in Sources */,
+				AF1B47B0225EBD69004A0B69 /* Theme.swift in Sources */,
 				AFD95BD6225E51CE0019F48B /* ViewController.swift in Sources */,
+				AF1B47BB225EC7D7004A0B69 /* UiImageViewExtension.swift in Sources */,
+				AF1B47BF225EC9B2004A0B69 /* Handler.swift in Sources */,
 				AFD95BD4225E51CE0019F48B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
