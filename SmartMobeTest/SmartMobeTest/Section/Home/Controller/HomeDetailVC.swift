@@ -46,8 +46,11 @@ class HomeDetailVC: UIViewController {
         }
         
         let tap = UITapGestureRecognizer()
+
         image.isUserInteractionEnabled = true
         tap.addTarget(self, action: #selector(self.UserDetailImageZoom(tapGesture:)))
+
+     
         image.addGestureRecognizer(tap)
         NavigationTittleLbl.isUserInteractionEnabled = true
         NavigationTittleLbl.addGestureRecognizer(tap)
