@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_1" orientation="portrait">
+    <device id="ipad9_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -16,9 +16,6 @@
         <array key="Roboto-Regular.ttf">
             <string>Roboto-Regular</string>
         </array>
-        <array key="untitled-font-4.ttf">
-            <string>untitled-font-4</string>
-        </array>
     </customFonts>
     <scenes>
         <!--HomeVC-->
@@ -26,11 +23,11 @@
             <objects>
                 <viewController storyboardIdentifier="HomeView" id="BYZ-38-t0r" customClass="HomeVC" customModule="SmartMobeTest" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="y9X-tK-J6t">
-                                <rect key="frame" x="10" y="10" width="394" height="842"/>
+                                <rect key="frame" x="10" y="10" width="748" height="1004"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="5ny-Mw-ZSl">
                                     <size key="itemSize" width="193" height="183"/>
@@ -40,7 +37,7 @@
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="HomeCell" id="5Ou-yW-F1w" customClass="HomeCell" customModule="SmartMobeTest" customModuleProvider="target">
-                                        <rect key="frame" x="100.5" y="0.0" width="193" height="183"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="193" height="183"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
                                             <rect key="frame" x="0.0" y="0.0" width="193" height="183"/>
@@ -62,6 +59,7 @@
                                                         <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                                             <integer key="value" value="10"/>
                                                         </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="boolean" keyPath="ignoresInvertColors" value="YES"/>
                                                     </userDefinedRuntimeAttributes>
                                                 </imageView>
                                                 <view alpha="0.20000000000000001" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yP3-xI-yUF">
@@ -136,27 +134,27 @@
             <objects>
                 <viewController storyboardIdentifier="HomeDetailViews" id="Gqd-Uv-QJu" customClass="HomeDetailVC" customModule="SmartMobeTest" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="UNk-CL-5Hm">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p3t-M5-81I">
-                                <rect key="frame" x="0.0" y="-40" width="414" height="936"/>
+                                <rect key="frame" x="0.0" y="-40" width="768" height="1064"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JGA-Jd-Xdf">
-                                        <rect key="frame" x="0.0" y="-10" width="414" height="255"/>
+                                        <rect key="frame" x="0.0" y="-10" width="768" height="320"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="banner1" translatesAutoresizingMaskIntoConstraints="NO" id="MO5-Wn-97Y">
-                                                <rect key="frame" x="0.0" y="0.0" width="414" height="255"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="768" height="320"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="boolean" keyPath="ignoresInvertColors" value="YES"/>
                                                 </userDefinedRuntimeAttributes>
                                             </imageView>
                                             <view alpha="0.30000001192092896" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZTA-Iv-4FI">
-                                                <rect key="frame" x="0.0" y="0.0" width="414" height="255"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="768" height="320"/>
                                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </view>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w7S-yi-J6v" customClass="PaddingLabel" customModule="Panchakanya" customModuleProvider="target">
-                                                <rect key="frame" x="8" y="214" width="406" height="25"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w7S-yi-J6v" customClass="PaddingLabel" customModule="SmartMobeTest" customModuleProvider="target">
+                                                <rect key="frame" x="8" y="279" width="760" height="25"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="25" id="bfx-v8-EG3"/>
                                                 </constraints>
@@ -169,8 +167,8 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Notice Details" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1vn-tn-2He" customClass="PaddingLabel" customModule="Panchakanya" customModuleProvider="target">
-                                                <rect key="frame" x="8" y="161" width="398" height="45"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1vn-tn-2He" customClass="PaddingLabel" customModule="SmartMobeTest" customModuleProvider="target">
+                                                <rect key="frame" x="8" y="226" width="752" height="45"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="45" id="3QX-ic-91W"/>
                                                 </constraints>
@@ -184,33 +182,47 @@
                                                 </userDefinedRuntimeAttributes>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oTY-jz-BAR">
-                                                <rect key="frame" x="356" y="230" width="50" height="50"/>
-                                                <color key="backgroundColor" red="0.8980392157" green="0.73725490199999999" blue="0.30980392159999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <rect key="frame" x="680" y="265" width="80" height="80"/>
+                                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="50" id="pIp-NR-GHL"/>
-                                                    <constraint firstAttribute="width" constant="50" id="rVL-4J-0D8"/>
+                                                    <constraint firstAttribute="height" constant="50" id="pIp-NR-GHL">
+                                                        <variation key="heightClass=regular-widthClass=regular" constant="80"/>
+                                                    </constraint>
+                                                    <constraint firstAttribute="width" constant="50" id="rVL-4J-0D8">
+                                                        <variation key="heightClass=regular-widthClass=regular" constant="80"/>
+                                                    </constraint>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" name="untitled-font-4" family="untitled-font-4" pointSize="20"/>
-                                                <state key="normal" title="B">
-                                                    <color key="titleColor" red="0.0" green="0.35294117650000001" blue="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="italicSystem" pointSize="17"/>
+                                                <state key="normal">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                                         <real key="value" value="25"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <variation key="heightClass=regular-widthClass=regular">
+                                                    <fontDescription key="fontDescription" type="italicSystem" pointSize="24"/>
+                                                </variation>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k9x-6g-LkZ">
-                                                <rect key="frame" x="12" y="52" width="50" height="50"/>
+                                                <rect key="frame" x="12" y="52" width="80" height="80"/>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" constant="50" id="7mz-7P-4hv"/>
-                                                    <constraint firstAttribute="height" constant="50" id="Xs6-te-sWV"/>
+                                                    <constraint firstAttribute="width" constant="50" id="7mz-7P-4hv">
+                                                        <variation key="heightClass=regular-widthClass=regular" constant="80"/>
+                                                    </constraint>
+                                                    <constraint firstAttribute="height" constant="50" id="Xs6-te-sWV">
+                                                        <variation key="heightClass=regular-widthClass=regular" constant="80"/>
+                                                    </constraint>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" name="untitled-font-4" family="untitled-font-4" pointSize="20"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                 <state key="normal" title="a">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
+                                                <variation key="heightClass=regular-widthClass=regular">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                </variation>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -220,12 +232,18 @@
                                             </constraint>
                                             <constraint firstAttribute="trailing" secondItem="w7S-yi-J6v" secondAttribute="trailing" id="6Dn-JB-kjb"/>
                                             <constraint firstAttribute="trailing" secondItem="ZTA-Iv-4FI" secondAttribute="trailing" id="EU1-yn-pft"/>
-                                            <constraint firstItem="1vn-tn-2He" firstAttribute="leading" secondItem="JGA-Jd-Xdf" secondAttribute="leading" constant="8" id="EWT-Ec-5rN"/>
+                                            <constraint firstItem="1vn-tn-2He" firstAttribute="leading" secondItem="JGA-Jd-Xdf" secondAttribute="leading" constant="8" id="EWT-Ec-5rN">
+                                                <variation key="heightClass=compact-widthClass=regular" constant="64"/>
+                                            </constraint>
                                             <constraint firstAttribute="trailing" secondItem="MO5-Wn-97Y" secondAttribute="trailing" id="GIx-tW-3Wr"/>
                                             <constraint firstItem="w7S-yi-J6v" firstAttribute="leading" secondItem="JGA-Jd-Xdf" secondAttribute="leading" constant="8" id="MWr-mR-NUL"/>
-                                            <constraint firstAttribute="trailing" secondItem="1vn-tn-2He" secondAttribute="trailing" constant="8" id="SUY-UY-kOJ"/>
+                                            <constraint firstAttribute="trailing" secondItem="1vn-tn-2He" secondAttribute="trailing" constant="8" id="SUY-UY-kOJ">
+                                                <variation key="heightClass=compact-widthClass=regular" constant="30"/>
+                                            </constraint>
                                             <constraint firstAttribute="bottom" secondItem="ZTA-Iv-4FI" secondAttribute="bottom" id="Ugw-ir-0tt"/>
-                                            <constraint firstAttribute="trailing" secondItem="oTY-jz-BAR" secondAttribute="trailing" constant="8" id="WnC-yN-zMx"/>
+                                            <constraint firstAttribute="trailing" secondItem="oTY-jz-BAR" secondAttribute="trailing" constant="8" id="WnC-yN-zMx">
+                                                <variation key="heightClass=compact-widthClass=regular" constant="64"/>
+                                            </constraint>
                                             <constraint firstAttribute="bottom" secondItem="MO5-Wn-97Y" secondAttribute="bottom" id="X9v-Xr-a11"/>
                                             <constraint firstItem="k9x-6g-LkZ" firstAttribute="top" secondItem="JGA-Jd-Xdf" secondAttribute="top" constant="52" id="XBt-x5-4E2"/>
                                             <constraint firstAttribute="bottom" secondItem="oTY-jz-BAR" secondAttribute="bottom" constant="-25" id="bT4-FW-bEe"/>
@@ -241,8 +259,8 @@
                                             <userDefinedRuntimeAttribute type="boolean" keyPath="ignoresInvertColors" value="YES"/>
                                         </userDefinedRuntimeAttributes>
                                     </view>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UlW-Gt-byN" customClass="PaddingLabel" customModule="Panchakanya" customModuleProvider="target">
-                                        <rect key="frame" x="8" y="257" width="398" height="0.0"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UlW-Gt-byN" customClass="PaddingLabel" customModule="SmartMobeTest" customModuleProvider="target">
+                                        <rect key="frame" x="8" y="322" width="752" height="0.0"/>
                                         <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="17"/>
                                         <color key="textColor" red="0.0" green="0.35294117650000001" blue="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
@@ -252,8 +270,8 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="characterWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uiB-ca-Fxa" customClass="PaddingLabel" customModule="Panchakanya" customModuleProvider="target">
-                                        <rect key="frame" x="8" y="265" width="398" height="0.0"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="characterWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uiB-ca-Fxa" customClass="PaddingLabel" customModule="SmartMobeTest" customModuleProvider="target">
+                                        <rect key="frame" x="8" y="330" width="752" height="0.0"/>
                                         <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="16"/>
                                         <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -262,6 +280,9 @@
                                                 <real key="value" value="16"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <variation key="heightClass=regular-widthClass=regular">
+                                            <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="25"/>
+                                        </variation>
                                     </label>
                                 </subviews>
                                 <constraints>
@@ -270,38 +291,42 @@
                                     <constraint firstItem="uiB-ca-Fxa" firstAttribute="top" secondItem="UlW-Gt-byN" secondAttribute="bottom" constant="8" id="BZJ-iP-cNz"/>
                                     <constraint firstItem="JGA-Jd-Xdf" firstAttribute="top" secondItem="p3t-M5-81I" secondAttribute="top" constant="-10" id="I8H-p8-mSI"/>
                                     <constraint firstItem="UlW-Gt-byN" firstAttribute="leading" secondItem="p3t-M5-81I" secondAttribute="leading" constant="8" id="X88-62-dKe"/>
-                                    <constraint firstAttribute="trailing" secondItem="uiB-ca-Fxa" secondAttribute="trailing" constant="8" id="XoS-z5-oHh"/>
-                                    <constraint firstAttribute="bottom" secondItem="uiB-ca-Fxa" secondAttribute="bottom" constant="10" id="Y6F-2b-mPK"/>
+                                    <constraint firstAttribute="trailing" secondItem="uiB-ca-Fxa" secondAttribute="trailing" constant="8" id="XoS-z5-oHh">
+                                        <variation key="heightClass=compact-widthClass=regular" constant="34"/>
+                                    </constraint>
+                                    <constraint firstAttribute="bottom" secondItem="uiB-ca-Fxa" secondAttribute="bottom" constant="189" id="Y6F-2b-mPK"/>
                                     <constraint firstAttribute="trailing" secondItem="UlW-Gt-byN" secondAttribute="trailing" constant="8" id="a3V-YT-erY"/>
-                                    <constraint firstItem="uiB-ca-Fxa" firstAttribute="leading" secondItem="p3t-M5-81I" secondAttribute="leading" constant="8" id="kvl-AP-jdT"/>
+                                    <constraint firstItem="uiB-ca-Fxa" firstAttribute="leading" secondItem="p3t-M5-81I" secondAttribute="leading" constant="8" id="kvl-AP-jdT">
+                                        <variation key="heightClass=compact-widthClass=regular" constant="35"/>
+                                    </constraint>
                                     <constraint firstItem="UlW-Gt-byN" firstAttribute="top" secondItem="JGA-Jd-Xdf" secondAttribute="bottom" constant="12" id="mQ3-yM-s0H"/>
                                 </constraints>
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="p3t-M5-81I" firstAttribute="centerX" secondItem="UNk-CL-5Hm" secondAttribute="centerX" id="2Kp-uG-yQu"/>
                             <constraint firstItem="p3t-M5-81I" firstAttribute="width" secondItem="UNk-CL-5Hm" secondAttribute="width" id="AHT-eh-5J3"/>
                             <constraint firstItem="JGA-Jd-Xdf" firstAttribute="width" secondItem="UNk-CL-5Hm" secondAttribute="width" id="ClW-tt-GzZ"/>
-                            <constraint firstItem="p3t-M5-81I" firstAttribute="leading" secondItem="BQ6-kv-6Ms" secondAttribute="leading" id="FQ6-ul-EiI"/>
-                            <constraint firstItem="p3t-M5-81I" firstAttribute="trailing" secondItem="BQ6-kv-6Ms" secondAttribute="trailing" id="g6J-jk-Cav"/>
                             <constraint firstAttribute="bottom" secondItem="p3t-M5-81I" secondAttribute="bottom" id="qBf-nw-cYU"/>
                             <constraint firstItem="p3t-M5-81I" firstAttribute="top" secondItem="UNk-CL-5Hm" secondAttribute="top" constant="-40" id="zc3-4f-Exx"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="BQ6-kv-6Ms"/>
                     </view>
                     <connections>
+                        <outlet property="CallBtnIcon" destination="oTY-jz-BAR" id="L28-tT-zHQ"/>
+                        <outlet property="DetailLbl" destination="uiB-ca-Fxa" id="yaB-fQ-IHX"/>
+                        <outlet property="HTitle" destination="UlW-Gt-byN" id="gKg-aa-7MR"/>
+                        <outlet property="NavigationTittleLbl" destination="1vn-tn-2He" id="Evb-nl-lQe"/>
                         <outlet property="dateLbl" destination="w7S-yi-J6v" id="4Ue-Qk-ivC"/>
                         <outlet property="image" destination="MO5-Wn-97Y" id="z1Q-ct-fHc"/>
                         <outlet property="menuBtn" destination="k9x-6g-LkZ" id="4xr-ZZ-BtN"/>
-                        <outlet property="newsDetailLbl" destination="uiB-ca-Fxa" id="MHY-gF-kLz"/>
-                        <outlet property="newsTitle" destination="UlW-Gt-byN" id="15h-Q5-KNC"/>
                         <outlet property="scrollView" destination="p3t-M5-81I" id="fU9-Xo-Z2d"/>
-                        <outlet property="shareBtn" destination="oTY-jz-BAR" id="QrS-ah-lxA"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Xdk-x2-QvV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2438" y="32"/>
+            <point key="canvasLocation" x="847.76785714285711" y="20.289855072463769"/>
         </scene>
     </scenes>
     <resources>

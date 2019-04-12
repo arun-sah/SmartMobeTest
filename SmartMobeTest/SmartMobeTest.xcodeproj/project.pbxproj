@@ -20,6 +20,7 @@
 		AF1B47BB225EC7D7004A0B69 /* UiImageViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF1B47BA225EC7D7004A0B69 /* UiImageViewExtension.swift */; };
 		AF1B47BD225EC885004A0B69 /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF1B47BC225EC885004A0B69 /* WebService.swift */; };
 		AF1B47BF225EC9B2004A0B69 /* Handler.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF1B47BE225EC9B2004A0B69 /* Handler.swift */; };
+		AF5AF3AA225FB0B200A1A0E5 /* ImageZoomVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF5AF3A9225FB0B200A1A0E5 /* ImageZoomVC.swift */; };
 		AFD95BD4225E51CE0019F48B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD95BD3225E51CE0019F48B /* AppDelegate.swift */; };
 		AFD95BD6225E51CE0019F48B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD95BD5225E51CE0019F48B /* ViewController.swift */; };
 		AFD95BD9225E51CE0019F48B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFD95BD7225E51CE0019F48B /* Main.storyboard */; };
@@ -46,6 +47,7 @@
 		AF1B47BA225EC7D7004A0B69 /* UiImageViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UiImageViewExtension.swift; sourceTree = "<group>"; };
 		AF1B47BC225EC885004A0B69 /* WebService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
 		AF1B47BE225EC9B2004A0B69 /* Handler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Handler.swift; sourceTree = "<group>"; };
+		AF5AF3A9225FB0B200A1A0E5 /* ImageZoomVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageZoomVC.swift; sourceTree = "<group>"; };
 		AFD95BD0225E51CE0019F48B /* SmartMobeTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartMobeTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFD95BD3225E51CE0019F48B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AFD95BD5225E51CE0019F48B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -202,8 +204,8 @@
 		AFD95BEC225E58440019F48B /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				0A363075225EF9C00067A252 /* Model */,
 				AFD95BED225E585D0019F48B /* Controller */,
+				0A363075225EF9C00067A252 /* Model */,
 				AFD95BEE225E586A0019F48B /* Views */,
 			);
 			path = Home;
@@ -212,8 +214,9 @@
 		AFD95BED225E585D0019F48B /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				0A363078225F4AF20067A252 /* HomeDetailVC.swift */,
 				AFD95BF0225E5FFE0019F48B /* HomeVC.swift */,
+				0A363078225F4AF20067A252 /* HomeDetailVC.swift */,
+				AF5AF3A9225FB0B200A1A0E5 /* ImageZoomVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -358,6 +361,7 @@
 				AF1B47AD225EBC50004A0B69 /* Routes.swift in Sources */,
 				AF1B47AE225EBC50004A0B69 /* Util.swift in Sources */,
 				AF1B47B0225EBD69004A0B69 /* Theme.swift in Sources */,
+				AF5AF3AA225FB0B200A1A0E5 /* ImageZoomVC.swift in Sources */,
 				0A36307B225F4BA00067A252 /* UilabelExtension.swift in Sources */,
 				AFD95BD6225E51CE0019F48B /* ViewController.swift in Sources */,
 				AF1B47BB225EC7D7004A0B69 /* UiImageViewExtension.swift in Sources */,

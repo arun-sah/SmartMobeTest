@@ -10,8 +10,8 @@ import UIKit
 
 class HomeVC: UIViewController {
     @IBOutlet var BackGroundView: UIView!
-    
     @IBOutlet weak var collectionview: UICollectionView!
+    var refreshControl  : UIRefreshControl!
     
     var homedata = [HomeModel]()
     lazy var searchBar:UISearchBar = UISearchBar()
@@ -19,15 +19,44 @@ class HomeVC: UIViewController {
     var nameArray = [String]()
      var FilterednameArray = [String]()
     var currentIndex = 0
+    var Dheight:CGFloat = 0
+    var Dwidth:CGFloat = 0
     
     override func loadView() {
         super.loadView()
         nameArray = ["Apple","banana","Cat","Dog","Elephnat","Frog","Girraf","hen"," Polar Bear","Hummingbird"]
        HomeApiCall()
+        
+        Dheight = self.collectionview.frame.height
+        Dwidth = self.view.frame.width
     }
     override func viewDidLoad() {
         super.viewDidLoad()
         Util.setupNavigationBar(leftButtonIcon: "", Tittle: "Home", rightButtonIcon: "\u{1F50D}", parent: self)
+        
+        refreshControl = UIRefreshControl()
+        refreshControl.attributedTitle = NSAttributedString(string: "Pull to refresh")
+        refreshControl.addTarget(self, action: #selector(self.refresh(sender:)), for: UIControl.Event.valueChanged)
+        self.collectionview.addSubview(refreshControl)
+    }
+    
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(true)
+        navigationController?.navigationBar.isHidden = false
+    }
+    
+    override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
+        if UIDevice.current.orientation.isLandscape {
+            print("Landscape")
+        } else {
+            print("Portrait")
+        }
+    }
+    
+    @objc func refresh(sender:AnyObject) {
+       HomeApiCall()
+        refreshControl.endRefreshing()
     }
     
     func setupGradientBackground(BGView:UIView) {
@@ -140,24 +169,31 @@ extension HomeVC:UICollectionViewDelegate,UICollectionViewDataSource,UICollectio
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        navigationController?.pushViewController(Routes.GetHomeDetailVC(img: homedata[indexPath.row].url!), animated: true)
+        var tittleText = ""
+        if !isSearch {
+            tittleText = FilterednameArray[indexPath.row]
+        }else{
+            tittleText = nameArray[indexPath.row]
+        }
+        navigationController?.pushViewController(Routes.GetHomeDetailVC(img: homedata[indexPath.row].url!, titlletext: tittleText), animated: true)
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         if (UIDevice.current.model == "iPhone"){
-            switch UIDevice.current.modelName {
-            case "iPhone 5":
-                print("iphone 5,5s,SE,5c")
-               return  CGSize(width: self.view.frame.width/2.3, height: 200)
-               
-                break
-            default:
-                 print("iphone defult")
-                // for all device exclusive small iphone and include simulator so in simultor iphone 5/se single row is shown
-                return  CGSize(width: self.view.frame.width/2.2, height: 200)
-            }
+            return CGSize(width: Dwidth/2.22, height: 200)
+//            switch UIDevice.current.modelName {
+//            case "iPhone 5":
+//                print("iphone 5,5s,SE,5c")
+//               return  CGSize(width: self.view.frame.width/2.3, height: 200)
+//
+//                break
+//            default:
+//                 print("iphone defult")
+//                // for all device exclusive small iphone and include simulator so in simultor iphone 5/se single row is shown
+//                return  CGSize(width: self.view.frame.width/2.2, height: 200)
+          //  }
         }else{
-           return  CGSize(width: 200, height: 200)
+           return  CGSize(width: 230, height: 250)
         }
         
         
