@@ -13,6 +13,7 @@ import SwiftyJSON
 
 class HomeDetailVC: UIViewController {
     
+    @IBOutlet weak var ImagetransparentView: UIView!
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var image: UIImageView!
     @IBOutlet weak var CallBtnIcon: UIButton!
@@ -46,14 +47,14 @@ class HomeDetailVC: UIViewController {
         }
         
         let tap = UITapGestureRecognizer()
-
-        image.isUserInteractionEnabled = true
+        ImagetransparentView.isUserInteractionEnabled = true
         tap.addTarget(self, action: #selector(self.UserDetailImageZoom(tapGesture:)))
-
-     
-        image.addGestureRecognizer(tap)
+        ImagetransparentView.addGestureRecognizer(tap)
+        
+        let tapLbl = UITapGestureRecognizer()
+        tapLbl.addTarget(self, action: #selector(self.UserDetailImageZoom(tapGesture:)))
         NavigationTittleLbl.isUserInteractionEnabled = true
-        NavigationTittleLbl.addGestureRecognizer(tap)
+        NavigationTittleLbl.addGestureRecognizer(tapLbl)
         
         if let imageURL = URL(string:imgurl) {
             image.sd_setImage(with: imageURL, placeholderImage: UIImage(named: "smartmobe"))

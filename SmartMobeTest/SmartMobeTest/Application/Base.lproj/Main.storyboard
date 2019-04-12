@@ -317,6 +317,7 @@
                         <outlet property="CallBtnIcon" destination="oTY-jz-BAR" id="L28-tT-zHQ"/>
                         <outlet property="DetailLbl" destination="uiB-ca-Fxa" id="yaB-fQ-IHX"/>
                         <outlet property="HTitle" destination="UlW-Gt-byN" id="gKg-aa-7MR"/>
+                        <outlet property="ImagetransparentView" destination="ZTA-Iv-4FI" id="hB5-Fl-Eh9"/>
                         <outlet property="NavigationTittleLbl" destination="1vn-tn-2He" id="Evb-nl-lQe"/>
                         <outlet property="dateLbl" destination="w7S-yi-J6v" id="4Ue-Qk-ivC"/>
                         <outlet property="image" destination="MO5-Wn-97Y" id="z1Q-ct-fHc"/>
