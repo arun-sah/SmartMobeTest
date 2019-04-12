@@ -36,6 +36,14 @@ class HomeDetailVC: UIViewController {
         menuBtn.setTitle("\u{2190}", for: .normal)
         CallBtnIcon.setTitle("\u{1F4DE}", for: .normal)
         CallBtnIcon.titleLabel?.font = UIFont.systemFont(ofSize: 18)
+        if (UIDevice.current.model == "iPhone"){
+            CallBtnIcon.layer.cornerRadius = 25
+            menuBtn.layer.cornerRadius = 25
+        }
+        else{
+            CallBtnIcon.layer.cornerRadius = 40
+            menuBtn.layer.cornerRadius = 40
+        }
         
         let tap = UITapGestureRecognizer()
         view.isUserInteractionEnabled = true

@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SmartMobeTest/Section/Home/Controller/HomeVC.swift"
-            timestampString = "576697232.864409"
+            timestampString = "576726784.539454"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "71"
-            endingLineNumber = "71"
+            startingLineNumber = "84"
+            endingLineNumber = "84"
             landmarkName = "RemoveSearchbar()"
             landmarkType = "7">
          </BreakpointContent>
@@ -26,45 +26,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SmartMobeTest/Section/Home/Controller/HomeVC.swift"
-            timestampString = "576697232.864575"
+            timestampString = "576726784.539878"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "68"
-            endingLineNumber = "68"
+            startingLineNumber = "81"
+            endingLineNumber = "81"
             landmarkName = "setUpSearchbar()"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "SmartMobeTest.HomeVC.collectionView(_: __C.UICollectionView, layout: __C.UICollectionViewLayout, sizeForItemAt: Foundation.IndexPath) -&gt; __C.CGSize"
-                  moduleName = "SmartMobeTest"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/arunkumarsah/Documents/ios%20projects/SmartMobeTest/SmartMobeTest/SmartMobeTest/SmartMobeTest/Section/Home/Controller/HomeVC.swift"
-                  timestampString = "576638182.295162"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "34"
-                  endingLineNumber = "34"
-                  offsetFromSymbolStart = "426">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "SmartMobeTest.HomeVC.collectionView(_: __C.UICollectionView, layout: __C.UICollectionViewLayout, sizeForItemAt: Foundation.IndexPath) -&gt; __C.CGSize"
-                  moduleName = "SmartMobeTest"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/arunkumarsah/Documents/ios%20projects/SmartMobeTest/SmartMobeTest/SmartMobeTest/SmartMobeTest/Section/Home/Controller/HomeVC.swift"
-                  timestampString = "576638182.297598"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "34"
-                  endingLineNumber = "34"
-                  offsetFromSymbolStart = "502">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
