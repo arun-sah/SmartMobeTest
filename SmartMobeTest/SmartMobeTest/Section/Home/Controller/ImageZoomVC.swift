@@ -20,6 +20,7 @@ class ImageZoomVC: UIViewController,UIScrollViewDelegate {
         super.loadView()
         imageMainView = UIView()
         imageMainView.backgroundColor = UIColor.black.withAlphaComponent(0.2)
+        imageMainView.ignoresInvertColors = true
         self.view.addSubview(imageMainView)
         
         self.contentScrollView = UIScrollView()
